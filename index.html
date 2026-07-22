@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">&lt;Dev /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <button class="switch" id="themeSwitch" aria-label="Cambiar modo"></button>
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1 class="typing">Hola, soy <span class="highlight">Tu Nombre</span></h1>
+        <p class="subtitle">Desarrollador Web &amp; Diseñador</p>
+        <div class="hero-btns">
+            <a href="#proyectos" class="btn primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn secondary">Contáctame</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="sobre-mi" class="section">
+    <div class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <div class="img-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>Soy un desarrollador apasionado por crear experiencias digitales modernas y funcionales. Me encanta transformar ideas en código limpio y eficiente.</p>
+                <div class="info-grid">
+                    <div><strong>Nombre:</strong> Tu Nombre</div>
+                    <div><strong>Email:</strong> tu@email.com</div>
+                    <div><strong>Ubicación:</strong> Tu Ciudad, País</div>
+                    <div><strong>Freelance:</strong> Disponible</div>
+                </div>
+                <a href="#" class="btn primary"><i class="fas fa-download"></i> Descargar CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="habilidades" class="section dark">
+    <div class="container">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="progress-bar"><div class="progress" style="width:90%">90%</div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="progress-bar"><div class="progress" style="width:85%">85%</div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar"><div class="progress" style="width:75%">75%</div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <div class="progress-bar"><div class="progress" style="width:70%">70%</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos" class="section">
+    <div class="container">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Proyecto Uno</h3>
+                    <p>Descripción breve del proyecto y tecnologías usadas.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                    <a href="#" class="btn primary small">Ver Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><i class="fas fa-mobile-alt"></i></div>
+                <div class="project-info">
+                    <h3>Proyecto Dos</h3>
+                    <p>Descripción breve del proyecto y tecnologías usadas.</p>
+                    <div class="project-tags">
+                        <span>React</span><span>Node</span>
+                    </div>
+                    <a href="#" class="btn primary small">Ver Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><i class="fas fa-server"></i></div>
+                <div class="project-info">
+                    <h3>Proyecto Tres</h3>
+                    <p>Descripción breve del proyecto y tecnologías usadas.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Django</span>
+                    </div>
+                    <a href="#" class="btn primary small">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="section dark">
+    <div class="container">
+        <h2 class="section-title">Contáctame</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit" class="btn primary">Enviar Mensaje</button>
+            </form>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> tu@email.com</div>
+                <div><i class="fas fa-phone"></i> +123 456 789</div>
+                <div><i class="fas fa-map-marker-alt"></i> Tu Ciudad, País</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Menu hamburguesa
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Dark mode toggle
+    const themeSwitch = document.getElementById('themeSwitch');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light');
+    }
+
+    themeSwitch.addEventListener('click', () => {
+        body.classList.toggle('light');
+        localStorage.setItem('theme', body.classList.contains('light') ? 'light' : 'dark');
+    });
+</script>
+
+</body>
+</html>
