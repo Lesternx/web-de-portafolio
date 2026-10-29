@@ -159,33 +159,7 @@
     <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
 </footer>
 
-<script>
-    // Menu hamburguesa
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-        document.querySelector('.nav-links').classList.toggle('active');
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-
-    // Dark mode toggle
-    const themeSwitch = document.getElementById('themeSwitch');
-    const body = document.body;
-
-    if (localStorage.getItem('theme') === 'light') {
-        body.classList.add('light');
-    }
-
-    themeSwitch.addEventListener('click', () => {
-        body.classList.toggle('light');
-        localStorage.setItem('theme', body.classList.contains('light') ? 'light' : 'dark');
-    });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
