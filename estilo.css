@@ -55,11 +55,13 @@ nav {
     padding: 0 2rem;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #ef4444;
-    letter-spacing: 2px;
+.about-img img {
+    width: 250px;       /* Ajusta el tamaño */
+    height: 250px;
+    object-fit: cover;  /* Evita que se deforme */
+    border-radius: 50%; /* La hace redonda */
+    display: block;
+    margin: 0 auto;
 }
 
 .nav-links {
